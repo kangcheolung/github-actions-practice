@@ -33,4 +33,12 @@ jobs:
         run: |
           echo $GITHUB_SHA    
           echo $GITHUB_REPOSITORY
+
+      # Secret : 민감한 정보(비밀번호, API Key 등)를 저장하는 공간
+      # settings > secrets and variables > actions 에서 설정 가능
+
+      - name: Github Actions Secret 변수 사용해보기
+        run: |
+          echo ${{ secrets.MY_NAME }}
+          echo ${{ secrets.MY_HOBBY }}
        
