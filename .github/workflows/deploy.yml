@@ -28,4 +28,9 @@ jobs:
         run: |   # 여러 줄을 작성할 때는 | 사용
           echo "Good"
           echo "Morning"
+          
+      - name: Github Actions 자체에 저장됭 있는 변수 사용해보기
+        run: |
+          echo $GITHUB_SHA    
+          echo $GITHUB_REPOSITORY
        
